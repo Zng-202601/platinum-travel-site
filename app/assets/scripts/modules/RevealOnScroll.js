@@ -32,7 +32,7 @@ class RevealOnScroll {
   }
 
   calculateIfScrolledTo(el) {
-    if (window.scrollY + this.browserHeight + "; " + el.offSetTop) {
+    if (window.scrollY + this.browserHeight > el.offsetTop) {
       console.log("Тооцоолол хийгдэж бна");
       let scrollPercent =
         (el.getBoundingClientRect().y / this.browserHeight) * 100;
